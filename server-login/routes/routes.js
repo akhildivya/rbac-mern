@@ -3,6 +3,7 @@ const router=new express.Router()
 
 const user=require('../controlers/userLogic')
 
-router.post('/user/signup',user.Signup)
+router.post('/signup',user.Signup)
+router.post('/login',user.login)
 
 module.exports=router
